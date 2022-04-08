@@ -8,8 +8,8 @@ SOAL :
 4. Mengurutkan angka menggunakan bahasa python (daftarangka = 11,4,5,2,5,6,93,29)
 
 Kelompok 5 (Team ZeroOne) Lab Pemrograman B
-Nabila Aprillia
-Sultan Shalahuddin
-Laila Asrin
-Annisa Lathifa
-Askar Aziz
+1. Nabila Aprillia
+2. Sultan Shalahuddin
+3. Laila Asrin
+4. Annisa Lathifa
+5. Askar Aziz
