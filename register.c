@@ -1,0 +1,1 @@
+//pembuatan file bin
