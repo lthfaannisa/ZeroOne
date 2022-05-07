@@ -10,7 +10,3 @@
 
   fwrite(login, sizeof(char), sizeof(login)/sizeof(char), fpw);
 
-  fclose(fpw);
-
-  return 0:
-}
