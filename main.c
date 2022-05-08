@@ -42,3 +42,42 @@ printf("\tA1\tA2\tA3\tA4\tA5\n\tB1\tB2\tB3\tB4\tB5\n\tC1\tC2\tC3\tC4\tC5\n\tD1\t
     printf("Jurrasic Park\n");
   }
   else if (siap.nama_film == '2')
+    
+    //bagian laila
+    
+    printf("Minggu\n");
+  }
+  else {
+    printf("Sistem telah error\n");
+  }
+    printf("Pukul\t: ");
+    if (siap.jam == '1')
+    {
+      printf("11.00\n");
+    } else if (siap.jam == '2')
+    {
+      printf("14.00\n");
+    } else if (siap.jam == '3')
+    { 
+      printf("17.00\n");
+    } else {
+      printf("\nSistem telah error\n");
+    }
+
+     printf("Seat\t: %s\n", siap.seat);
+    printf("Harga\t: Rp%d\n", siap.harga_tiket);
+    printf("====================================================\n");
+    printf("\nHarap tiket dibawa saat ke bioskop");
+    printf("\n\n\nTerimakasih telah memesan tiket di Bioskop ZeroOne ini ^_^\n\n");
+    tidak :
+    printf("Apakah anda ingin memesan tiket kembali\n[Y/T] ? \n\n");
+    kembali = getche();
+    if (kembali == 'y' || kembali == 'Y')
+    goto pesan;
+    else if (kembali == 't' || kembali == 'T')
+    {
+    printf("\n==========================");
+    printf("\n       TERIMA KASIH       ");
+    printf("\n==========================");
+    }
+    return 0;
