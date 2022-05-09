@@ -42,11 +42,49 @@ printf("\tA1\tA2\tA3\tA4\tA5\n\tB1\tB2\tB3\tB4\tB5\n\tC1\tC2\tC3\tC4\tC5\n\tD1\t
     printf("Jurrasic Park\n");
   }
   else if (siap.nama_film == '2')
-    
-    //bagian laila
-    
-    printf("Minggu\n");
+  {
+    printf("KKN di Desa Penari\n");
   }
+  else if (siap.nama_film == '3')
+  {
+    printf("Jujutsu Kaisen 0\n");
+  }
+  else if (siap.nama_film == '4')
+  {
+    printf("Encanto\n");
+  }
+  else{
+    printf("Sistem telah error");
+  }
+  printf("Hari\t: ");
+if (siap.hari =='1')
+{
+printf("Senin\n");
+}
+else if (siap.hari == '2')
+{
+  printf("Selasa\n");
+}
+else if (siap.hari == '3')
+{
+  printf("Rabu\n");
+}
+else if (siap.hari == '4')
+{
+  printf("Kamis\n");
+}
+else if (siap.hari == '5')
+{
+  printf("Jum'at\n");
+}
+else if (siap.hari == '6')
+{
+  printf("Sabtu\n");
+}
+else if (siap.hari == '7')
+{
+  printf("Minggu\n");
+}
   else {
     printf("Sistem telah error\n");
   }
