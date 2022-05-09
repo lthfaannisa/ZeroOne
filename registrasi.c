@@ -1,8 +1,7 @@
 //pembuatan file bin
-
-
-
-
+#include <stdio.h>
+int main()
+{
   FILE *fpw = fopen("database/login.bin","wb");
   char login[20] = "ZeroOne@root";
 /*disini mau buat username ZeroOne
