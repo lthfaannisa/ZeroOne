@@ -13,7 +13,7 @@
  ### Bagaimana Cara menjalankan Program file main.c❓
 <hr>
 <b>1. Lakukan Kompilasi Terlebih Dahulu </b> ⚡
-<pre><code> $ gcc -Wall -pedantic -g -0 main main.c </code></pre>
+<pre><code> $ gcc -Wall -pedantic -g -o main main.c </code></pre>
 <b>2. Jalankan Program ini </b>
 <pre><code> $ ./main ZeroOne root </code></pre>
 
