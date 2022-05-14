@@ -1,1 +1,5 @@
-#sorting data
+
+
+//sultan//
+angka.sort()
+print(angka)
