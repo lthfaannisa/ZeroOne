@@ -1,3 +1,50 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <conio.h>
+
+int main (int total_argumen, char*nilai_argumen[])
+{
+  if(!(total_argumen == 3))
+  {
+    printf("inputan yang anda masukkan tidak sesuai");
+    return EXIT_FAILURE;
+  }
+
+  char kembali;
+  char username_i[20], password_i[20];
+  strcpy(username_i, nilai_argumen[1]);
+  strcpy(password_i, nilai_argumen[2]);
+  
+  FILE *fptr;
+  if((fptr = fopen("database/login.bin","rb")) == NULL)
+  {
+    printf("File tidak ditemukan");
+    return EXIT_FAILURE;
+  }
+  
+  typedef struct tiket_bioskop
+  {
+    char nama_film;
+    int harga_tiket;
+    int total_harga;
+    char hari;
+    char jam;
+    char seat[2];
+  }
+  ticket;
+  ticket siap;
+  
+  char akun[20];
+  fread(akun,sizeof(char),sizeof(akun)/sizeof(char),fptr);
+  fclose(fptr);
+  
+  /*username : ZeroOne
+  password : root */
+  
+
+// askar lanjutkan disini//
+
 //bagian login dan aplikasi
   scanf("%s", &siap.nama_film);
 
