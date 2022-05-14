@@ -8,4 +8,9 @@ int main()
  passwordnya root dan @ sebagai pemisah antara username dan pass*/
 
   fwrite(login, sizeof(char), sizeof(login)/sizeof(char), fpw);
+  
+  fclose(fpw);
+  
+  return 0;
+}
 
