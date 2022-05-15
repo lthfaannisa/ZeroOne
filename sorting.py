@@ -7,6 +7,5 @@ print(angka)
 
 print("Daftar angka sesudah disorting : ")
 
-//sultan//
 angka.sort()
 print(angka)
