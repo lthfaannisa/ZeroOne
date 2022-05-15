@@ -43,7 +43,49 @@ int main (int total_argumen, char*nilai_argumen[])
   password : root */
   
 
-// askar lanjutkan disini//
+char *string[3];
+char username[20], password[20];
+int temp = 0;
+  
+string[0] = strtok(akun,"@");
+while (string[temp++] != NULL)
+{
+string[temp] = strtok(NULL,"@");
+}
+strcpy(username, string[0]);
+strcpy(password, string[1]);
+printf("Username : %s\n", username);
+printf("Password : %s\n", password);
+if((strcmp(username_i, username) == 0) && (strcmp(password_i, password) == 0))
+{
+printf("\nSelamat anda berhasil login");
+}
+else
+{
+printf("Maaf anda gagal login");
+return EXIT_FAILURE;
+}
+pesan :
+//tampilan menu
+printf("\n\n\t\t\t\t\tBIOSKOP ZeroOne\n\t\t\t\tJln. Bahasa C, nomor 5, Kota VS.
+Code\n");
+printf("
+================================================================
+======================\n");
+printf("\tNO\tNama Film\t\t\tJam ke1\t\tJam ke2\t\tJam ke3\n");
+printf("
+================================================================
+======================\n");
+printf("\t1\tJurassic Park\t\t\t11.00\t\t14.00\t\t17.00\n");
+printf("\t2\tKKN di Desa Penari\t\t11.00\t\t14.00\t\t17.00\n");
+printf("\t3\tJujutsu Kaisen 0\t\t11.00\t\t14.00\t\t17.00\n");
+printf("\t4\tEncanto\t\t\t\t11.00\t\t14.00\t\t17.00\n");
+printf("
+================================================================
+======================\n");
+printf("\nHarga Tiket :\nSetiap hari : Rp50000\n");
+//inputan mau nonton film apa
+printf("\nSilakan pilih film yang ingin anda pesan(1-4) : ");
 
 //bagian login dan aplikasi
   scanf("%s", &siap.nama_film);
