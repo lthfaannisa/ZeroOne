@@ -3,6 +3,7 @@
 #include <string.h>
 #include <conio.h>
 
+//sistem login
 int main (int total_argumen, char *nilai_argumen[])
 {
     if(!(total_argumen == 3))
@@ -22,7 +23,9 @@ int main (int total_argumen, char *nilai_argumen[])
         printf("File tidak ditemukan");
         return EXIT_FAILURE;
     }
-
+    //sistem login
+    
+    //aplikasi
     typedef struct tiket_bioskop
     {
     char nama_film;
@@ -34,7 +37,9 @@ int main (int total_argumen, char *nilai_argumen[])
     }
     ticket;
     ticket siap;
-
+    //aplikasi
+    
+    //sistem login
     char akun[20];
     fread(akun, sizeof(char), sizeof(akun)/sizeof(char), fptr);
     fclose(fptr);
@@ -68,9 +73,12 @@ int main (int total_argumen, char *nilai_argumen[])
         printf("Maaf anda gagal login");
         return EXIT_FAILURE;
     }
+    //sistem login
     
+    //aplikasi
     pesan :
-//tampilan menu
+    
+    //tampilan menu
     printf("\n\n\t\t\t\t\tBIOSKOP ZeroOne\n\t\t\t\tJln. Bahasa C, nomor 5, Kota VS. Code\n");
     printf("   ======================================================================================\n");
     printf("\tNO\tNama Film\t\t\tJam ke1\t\tJam ke2\t\tJam ke3\n");
@@ -198,19 +206,19 @@ int main (int total_argumen, char *nilai_argumen[])
 
     printf("====================================================\n");
     printf("\nHarap tiket dibawa saat ke bioskop");
-printf("\n\n\nTerimakasih telah memesan tiket di Bioskop ZeroOne ini ^_^\n\n");
-      
-tidak :
-printf("Apakah anda ingin memesan tiket kembali\n[Y/T] ? \n\n"); 
+    printf("\n\n\nTerimakasih telah memesan tiket di Bioskop ZeroOne ini ^_^\n\n");
+    
+    tidak :
+    printf("Apakah anda ingin memesan tiket kembali\n[Y/T] ? \n\n"); 
     kembali = getche();
     if (kembali == 'y' || kembali == 'Y')
-    goto pesan;
- else if (kembali == 't' || kembali == 'T')
-     {
-         printf("\n==========================");
-         printf("\n       TERIMA KASIH       ");
-         printf("\n==========================");
-            }
-
-return 0;
+        goto pesan;
+    else if (kembali == 't' || kembali == 'T')
+    {
+        printf("\n==========================");
+        printf("\n       TERIMA KASIH       ");
+        printf("\n==========================");
+    }
+    
+    return 0;
 }
