@@ -111,7 +111,7 @@ printf("\tA1\tA2\tA3\tA4\tA5\n\tB1\tB2\tB3\tB4\tB5\n\tC1\tC2\tC3\tC4\tC5\n\tD1\t
 
   system("cls");
 
-  siap.harga_tiket = 50000:
+  siap.harga_tiket = 50000;
   printf("\nPEMBAYARAN TIKET BIOSKOP ZeroOne :\n\n");
   printf("=============================================\n");
   printf("NO FILM\t\tSEAT\tHARGA\n");
